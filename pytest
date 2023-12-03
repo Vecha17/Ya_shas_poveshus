@@ -1,343 +1,45 @@
 $ pytest
-=========================================================================================== test session starts ============================================================================================
+================================================================================================= test session starts ==================================================================================================
 platform win32 -- Python 3.9.10, pytest-7.1.3, pluggy-1.0.0 -- D:\Dev\django_sprint4\venv\Scripts\python.exe
 django: settings: blogicum.settings (from ini)
 rootdir: D:\Dev\django_sprint4, configfile: pytest.ini, testpaths: tests/
 plugins: Faker-12.0.1, django-4.5.2
 collected 25 items
 
-tests/test_content.py::TestContent::test_unpublished FAILED                                                                                                                                           [  4%]
-tests/test_content.py::TestContent::test_only_own_pubs_in_category PASSED                                                                                                                             [  8%]
-tests/test_content.py::TestContent::test_only_own_pubs_in_profile PASSED                                                                                                                              [ 12%]
-tests/test_content.py::TestContent::test_unpublished_category PASSED                                                                                                                                  [ 16%]
-tests/test_content.py::TestContent::test_future_posts FAILED                                                                                                                                          [ 20%]
-tests/test_content.py::TestContent::test_pagination PASSED                                                                                                                                            [ 24%]
-tests/test_content.py::TestContent::test_image_visible PASSED                                                                                                                                         [ 28%]
-tests/test_err_pages.py::test_custom_err_handlers PASSED                                                                                                                                              [ 32%] 
-tests/test_users.py::test_custom_err_handlers PASSED                                                                                                                                                  [ 36%]
-tests/test_users.py::test_profile PASSED                                                                                                                                                              [ 40%]
-tests/test_comment.py::test_comment_created_at PASSED                                                                                                                                                 [ 44%] 
-tests/test_comment.py::test_comment FAILED                                                                                                                                                            [ 48%]
-tests/test_comment.py::test_404_on_comment_deleted_post PASSED                                                                                                                                        [ 52%]
-tests/test_post.py::test_post_created_at PASSED                                                                                                                                                       [ 56%]
-tests/test_post.py::test_post FAILED                                                                                                                                                                  [ 60%]
-tests/test_comment.py::TestCommentModelAttrs::test_model_attrs[`post` field] <- tests\conftest.py PASSED                                                                                              [ 64%]
-tests/test_comment.py::TestCommentModelAttrs::test_model_attrs[`author` field] <- tests\conftest.py PASSED                                                                                            [ 68%] 
-tests/test_comment.py::TestCommentModelAttrs::test_model_attrs[`text` field] <- tests\conftest.py PASSED                                                                                              [ 72%]
-tests/test_comment.py::TestCommentModelAttrs::test_model_attrs[`created_at` field] <- tests\conftest.py PASSED                                                                                        [ 76%] 
-tests/test_emails.py::test_gitignore PASSED                                                                                                                                                           [ 80%] 
-tests/test_emails.py::test_email_backend_settings PASSED                                                                                                                                              [ 84%] 
-tests/test_err_pages.py::test_csrf_failure_view PASSED                                                                                                                                                [ 88%] 
-tests/test_post.py::TestPostModelAttrs::test_model_attrs[`image` field] <- tests\conftest.py PASSED                                                                                                   [ 92%]
-tests/test_post.py::TestPostModelAttrs::test_model_attrs[`pub_date` field] <- tests\conftest.py PASSED                                                                                                [ 96%] 
-tests/test_static_pages.py::test_static_pages_as_cbv PASSED                                                                                                                                           [100%] 
+tests/test_content.py::TestContent::test_unpublished PASSED                                                                                                                                                       [  4%]
+tests/test_content.py::TestContent::test_only_own_pubs_in_category PASSED                                                                                                                                         [  8%]
+tests/test_content.py::TestContent::test_only_own_pubs_in_profile PASSED                                                                                                                                          [ 12%]
+tests/test_content.py::TestContent::test_unpublished_category PASSED                                                                                                                                              [ 16%]
+tests/test_content.py::TestContent::test_future_posts PASSED                                                                                                                                                      [ 20%]
+tests/test_content.py::TestContent::test_pagination PASSED                                                                                                                                                        [ 24%]
+tests/test_content.py::TestContent::test_image_visible PASSED                                                                                                                                                     [ 28%]
+tests/test_err_pages.py::test_custom_err_handlers PASSED                                                                                                                                                          [ 32%]
+tests/test_users.py::test_custom_err_handlers PASSED                                                                                                                                                              [ 36%] 
+tests/test_users.py::test_profile PASSED                                                                                                                                                                          [ 40%]
+tests/test_comment.py::test_comment_created_at PASSED                                                                                                                                                             [ 44%] 
+tests/test_comment.py::test_comment PASSED                                                                                                                                                                        [ 48%]
+tests/test_comment.py::test_404_on_comment_deleted_post PASSED                                                                                                                                                    [ 52%]
+tests/test_post.py::test_post_created_at PASSED                                                                                                                                                                   [ 56%]
+tests/test_post.py::test_post FAILED                                                                                                                                                                              [ 60%]
+tests/test_comment.py::TestCommentModelAttrs::test_model_attrs[`post` field] <- tests\conftest.py PASSED                                                                                                          [ 64%]
+tests/test_comment.py::TestCommentModelAttrs::test_model_attrs[`author` field] <- tests\conftest.py PASSED                                                                                                        [ 68%] 
+tests/test_comment.py::TestCommentModelAttrs::test_model_attrs[`text` field] <- tests\conftest.py PASSED                                                                                                          [ 72%]
+tests/test_comment.py::TestCommentModelAttrs::test_model_attrs[`created_at` field] <- tests\conftest.py PASSED                                                                                                    [ 76%] 
+tests/test_emails.py::test_gitignore PASSED                                                                                                                                                                       [ 80%] 
+tests/test_emails.py::test_email_backend_settings PASSED                                                                                                                                                          [ 84%] 
+tests/test_err_pages.py::test_csrf_failure_view PASSED                                                                                                                                                            [ 88%] 
+tests/test_post.py::TestPostModelAttrs::test_model_attrs[`image` field] <- tests\conftest.py PASSED                                                                                                               [ 92%] 
+tests/test_post.py::TestPostModelAttrs::test_model_attrs[`pub_date` field] <- tests\conftest.py PASSED                                                                                                            [ 96%] 
+tests/test_static_pages.py::test_static_pages_as_cbv PASSED                                                                                                                                                       [100%] 
 
-================================================================================================= FAILURES ================================================================================================= 
-_______________________________________________________________________________________ TestContent.test_unpublished _______________________________________________________________________________________ 
+======================================================================================================= FAILURES ======================================================================================================= 
+______________________________________________________________________________________________________ test_post _______________________________________________________________________________________________________ 
 
-self = <test_content.CategoryPostContentTester object at 0x0000025657F495E0>, client = <django.test.client.Client object at 0x0000025657F5F940>, url = '/category/maintain-government/'
-assert_status_in = (200,), assert_cbk = 'raise_assert_page_loads_cbk'
-
-    def _testget(
-        self,
-        client,
-        url: Optional[str] = None,
-        assert_status_in: Tuple[int] = (200,),
-        assert_cbk: Union[
-            Callable[[], None], str
-        ] = "raise_assert_page_loads_cbk",
-    ) -> HttpResponse:
-        url = url or self.page_url.url
-        try:
-            response = client.get(url)
-            if response.status_code not in assert_status_in:
->               raise Exception
-E               Exception
-
-tests\test_content.py:100: Exception
-
-During handling of the above exception, another exception occurred:
-
-self = <test_content.TestContent object at 0x0000025657CA0B80>
-unpublished_posts_with_published_locations = [<Post: Discuss Area Once Enough Ready Adult>, <Post: Present Dark Over Military Nation Evidence>, <Post: Store Country Whom Article Ahead Per>]
-
-    def test_unpublished(self, unpublished_posts_with_published_locations):
-        profile_response = self.profile_tester.user_client_testget()
-        context_posts = profile_response.context.get(
-            self.profile_tester.items_key
-        )
-        expected_n = self.profile_tester.n_or_page_size(
-            len(unpublished_posts_with_published_locations)
-        )
-        assert len(context_posts) == expected_n, (
-            "Убедитесь, что на странице пользователя автор может видеть свои"
-            " посты, снятые с публикации."
-        )
-
-        response = self.main_tester.user_client_testget()
-        try:
-            items_key = self.main_tester.items_key
-        except AssertionError:
-            pass
-        else:
-            context_posts = response.context.get(items_key)
-            assert len(context_posts) == 0, (
-                "Убедитесь, что на главной странице не отображаются посты, "
-                "снятые с публикации."
-            )
-
->       response = self.category_tester.user_client_testget()
-
-tests\test_content.py:364:
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
-tests\test_content.py:71: in user_client_testget
-    return self._testget(
-tests\test_content.py:105: in _testget
-    getattr(self, assert_cbk)()
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
-
-self = <test_content.CategoryPostContentTester object at 0x0000025657F495E0>
-
-    def raise_assert_page_loads_cbk(self):
->       raise AssertionError(
-            "Убедитесь, что страница категории загружается без ошибок."
-        )
-E       AssertionError: Убедитесь, что страница категории загружается без ошибок.
-
-tests\test_content.py:266: AssertionError
-______________________________________________________________________________________ TestContent.test_future_posts _______________________________________________________________________________________ 
-
-self = <test_content.CategoryPostContentTester object at 0x00000256582E2C40>, client = <django.test.client.Client object at 0x00000256582F49A0>, url = '/category/both-night-degree/'
-assert_status_in = (200,), assert_cbk = 'raise_assert_page_loads_cbk'
-
-    def _testget(
-        self,
-        client,
-        url: Optional[str] = None,
-        assert_status_in: Tuple[int] = (200,),
-        assert_cbk: Union[
-            Callable[[], None], str
-        ] = "raise_assert_page_loads_cbk",
-    ) -> HttpResponse:
-        url = url or self.page_url.url
-        try:
-            response = client.get(url)
-            if response.status_code not in assert_status_in:
->               raise Exception
-E               Exception
-
-tests\test_content.py:100: Exception
-
-During handling of the above exception, another exception occurred:
-
-self = <test_content.TestContent object at 0x0000025657C86280>, user_client = <django.test.client.Client object at 0x00000256582F49A0>
-future_posts = [<Post: Already Could Speak This Student Sport>, <Post: Smile Continue Movement Doctor Require Great>, <Post: History Example My Responsibility Would Machine>]
-
-    def test_future_posts(self, user_client, future_posts):
-        profile_response = self.profile_tester.user_client_testget()
-        context_posts = profile_response.context.get(
-            self.profile_tester.items_key
-        )
-        expected_n = self.profile_tester.n_or_page_size(len(future_posts))
-        assert len(context_posts) == expected_n, (
-            "Убедитесь, что на странице пользователя автор может видеть свои"
-            " отложенные публикации."
-        )
-
-        response = self.main_tester.user_client_testget()
-        try:
-            items_key = self.main_tester.items_key
-        except AssertionError:
-            pass
-        else:
-            context_posts = response.context.get(items_key)
-            assert (
-                len(context_posts) == 0
-            ), ("Убедитесь, что на главной странице "
-                "не отображаются отложенные публикации.")
-
->       response = self.category_tester.user_client_testget()
-
-tests\test_content.py:463:
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
-tests\test_content.py:71: in user_client_testget
-    return self._testget(
-tests\test_content.py:105: in _testget
-    getattr(self, assert_cbk)()
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
-
-self = <test_content.CategoryPostContentTester object at 0x00000256582E2C40>
-
-    def raise_assert_page_loads_cbk(self):
->       raise AssertionError(
-            "Убедитесь, что страница категории загружается без ошибок."
-        )
-E       AssertionError: Убедитесь, что страница категории загружается без ошибок.
-
-tests\test_content.py:266: AssertionError
-_______________________________________________________________________________________________ test_comment _______________________________________________________________________________________________ 
-
-user_client = <django.test.client.Client object at 0x00000256584038B0>, another_user_client = <django.test.client.Client object at 0x0000025658403FA0>
-unlogged_client = <django.test.client.Client object at 0x0000025658403F10>, post_with_published_location = <Post: Method Cover Among Able While Particularly>, another_user = <User: amolina>
-post_comment_context_form_item = KeyVal(key='form', val=<CommentForm bound=False, valid=False, fields=(text)>), CommentModel = <class 'blog.models.Comment'>
-CommentModelAdapter = <class 'adapters.comment.CommentModelAdapter.<locals>._CommentModelAdapter'>, profile_content_tester = <test_content.ProfilePostContentTester object at 0x00000256583ADB80>
-
-    @pytest.mark.django_db(transaction=True)
-    def test_comment(
-            user_client: django.test.Client,
-            another_user_client: django.test.Client,
-            unlogged_client: django.test.Client,
-            post_with_published_location: Any,
-            another_user: Model,
-            post_comment_context_form_item: Tuple[str, BaseForm],
-            CommentModel: Type[Model],
-            CommentModelAdapter: CommentModelAdapterT,
-            profile_content_tester: ProfilePostContentTester
-    ):
-        post_with_published_location.author = another_user
-        post_with_published_location.save()
-        _, ctx_form = post_comment_context_form_item
-        a_post_get_response = get_a_post_get_response_safely(
-            user_client, post_with_published_location.id
-        )
-
-        # create comments
-        creation_tester = CreateCommentFormTester(
-            a_post_get_response,
-            CommentModel,
-            user_client,
-            another_user_client,
-            unlogged_client,
-            item_adapter=None,
-            ModelAdapter=CommentModelAdapter,
-        )
-
-        Form: Type[BaseForm] = type(ctx_form)
-        forms_to_create = create_comment_creation_forms(
-            creation_tester, Form, CommentModel, CommentModelAdapter)
-
-        response_on_created, created_items = creation_tester.test_create_several(
-            forms_to_create[1:], qs=CommentModel.objects.all()
-        )
-        content = response_on_created.content.decode(encoding="utf8")
-        creation_tester.test_creation_response(content, created_items)
-
-        comment_count_repr = f"({len(created_items)})"
-
-        index_content = user_client.get("/").content.decode("utf-8")
-        if comment_count_repr not in index_content:
-            raise AssertionError(
-                "Убедитесь, что на главной странице под постами отображается"
-                " количество комментариев. Число комментариев должно быть указано"
-                " в круглых скобках."
-            )
-
-        # check comment count on profile page
-        comment_adapter = CommentModelAdapter(created_items[0])
-        comment_post_adapter = PostModelAdapter(comment_adapter.post)
-        author_profile_url = f'/profile/{comment_post_adapter.author.username}/'
-        profile_content = (
-            profile_content_tester.user_client_testget(
-                url=author_profile_url).content.decode("utf-8"))
-        if comment_count_repr not in profile_content:
-            raise AssertionError(
-                "Убедитесь, что на странице пользователя под постами отображается"
-                " количество комментариев. Число комментариев должно быть указано"
-                " в круглых скобках."
-            )
-
-        created_item_adapters = [CommentModelAdapter(i) for i in created_items]
-
-        # edit comments
-        post_url = f"/posts/{post_with_published_location.id}/"
-        edit_url, del_url = find_edit_and_delete_urls(
-            created_item_adapters,
-            response_on_created,
-            urls_start_with=KeyVal(
-                key=post_url.replace(
-                    f"/{post_with_published_location.id}/", "/<post_id>/"
-                ),
-                val=post_url,
-            ),
-            user_client=user_client,
-        )
-
-        item_to_edit = created_items[0]
-        item_to_edit_adapter = CommentModelAdapter(item_to_edit)
-        old_prop_value = item_to_edit_adapter.displayed_field_name_or_value
-        update_props = {
-            item_to_edit_adapter.item_cls_adapter.displayed_field_name_or_value: (
-                f"{old_prop_value} edited"
-            )
-        }
-        delete_url_addr = del_url.key
-
->       _test_edit(
-            edit_url,
-            CommentModelAdapter,
-            item_to_edit,
-            EditFormTester=EditCommentFormTester,
-            user_client=user_client,
-            another_user_client=another_user_client,
-            unlogged_client=unlogged_client,
-            **update_props,
-        )
-
-tests\test_comment.py:191:
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
-tests\test_edit.py:58: in _test_edit
-    return tester.test_edit_item(
-tests\form\comment\edit_form_tester.py:112: in test_edit_item
-    return super().test_edit_item(updated_form, qs, item_adapter)
-tests\form\base_form_tester.py:370: in test_edit_item
-    can_edit, _ = self.user_can_edit(
-tests\form\base_form_tester.py:427: in user_can_edit
-    response = submitter.test_submit(
-tests\form\base_form_tester.py:448: in test_submit
-    response = self.client.post(url, data=data, follow=True)
-venv\lib\site-packages\django\test\client.py:751: in post
-    response = super().post(path, data=data, content_type=content_type, secure=secure, **extra)
-venv\lib\site-packages\django\test\client.py:407: in post
-    return self.generic('POST', path, post_data, content_type,
-venv\lib\site-packages\django\test\client.py:473: in generic
-    return self.request(**r)
-venv\lib\site-packages\django\test\client.py:719: in request
-    self.check_exception(response)
-venv\lib\site-packages\django\test\client.py:580: in check_exception
-    raise exc_value
-venv\lib\site-packages\django\core\handlers\exception.py:47: in inner
-    response = get_response(request)
-venv\lib\site-packages\django\core\handlers\base.py:181: in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-venv\lib\site-packages\django\views\generic\base.py:70: in view
-    return self.dispatch(request, *args, **kwargs)
-venv\lib\site-packages\django\contrib\auth\mixins.py:71: in dispatch
-    return super().dispatch(request, *args, **kwargs)
-venv\lib\site-packages\django\views\generic\base.py:98: in dispatch
-    return handler(request, *args, **kwargs)
-venv\lib\site-packages\django\views\generic\edit.py:193: in post
-    self.object = self.get_object()
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
-
-self = <blog.views.CommentUpdateView object at 0x00000256584469A0>
-
-    def get_object(self):
-        instance = get_object_or_404(
-            Comment,
-            pk=self.kwargs['comment_id'],
-        )
-        if instance.author != self.request.user:
->           raise PermissionError
-E           PermissionError
-
-blogicum\blog\views.py:210: PermissionError
-________________________________________________________________________________________________ test_post _________________________________________________________________________________________________ 
-
-published_category = <Category: Trial Daughter Imagine Trial Blood Note>, published_location = <Location: Dr. Calvin Bell II>, user_client = <django.test.client.Client object at 0x000002565833D370>        
-another_user_client = <django.test.client.Client object at 0x0000025657D60E50>, unlogged_client = <django.test.client.Client object at 0x0000025657D600A0>
-comment_to_a_post = <Comment: South bring happen civil. According summer provide style trade sort time commercial.>
-create_post_context_form_item = KeyVal(key='form', val=<PostForm bound=False, valid=False, fields=(is_published;title;text;pub_date;location;category;image)>), PostModel = <class 'blog.models.Post'>       
-CommentModelAdapter = <class 'adapters.comment.CommentModelAdapter.<locals>._CommentModelAdapter'>, main_content_tester = <test_content.MainPostContentTester object at 0x0000025657DC3D90>
+published_category = <Category: Prevent Chance Each Red Doctor Walk>, published_location = <Location: Andre Estrada>, user_client = <django.test.client.Client object at 0x000002B33405CD30>
+another_user_client = <django.test.client.Client object at 0x000002B33405C790>, unlogged_client = <django.test.client.Client object at 0x000002B33405C8E0>
+comment_to_a_post = <Comment: Goal simple career thousand recent effect wind. Indicate over reason commercial care summer. Author weight west less water strong author. If spring safe item them region score.>
+create_post_context_form_item = KeyVal(key='form', val=<PostForm bound=False, valid=False, fields=(is_published;title;text;pub_date;location;category;image)>), PostModel = <class 'blog.models.Post'>
+CommentModelAdapter = <class 'adapters.comment.CommentModelAdapter.<locals>._CommentModelAdapter'>, main_content_tester = <test_content.MainPostContentTester object at 0x000002B334015640>
 
     @pytest.mark.django_db(transaction=True)
     def test_post(
@@ -408,7 +110,7 @@ CommentModelAdapter = <class 'adapters.comment.CommentModelAdapter.<locals>._Com
         )
 
 tests\test_post.py:135:
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
 tests\form\delete_tester.py:77: in test_delete_item
     can_delete, response = self.user_can_delete(
 tests\form\delete_tester.py:114: in user_can_delete
@@ -451,9 +153,9 @@ venv\lib\site-packages\django\db\models\sql\query.py:1343: in build_filter
     self.check_related_objects(join_info.final_field, value, join_info.opts)
 venv\lib\site-packages\django\db\models\sql\query.py:1172: in check_related_objects
     for v in value:
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
 
-self = <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000025659570E80>>, args = ()
+self = <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000002B334008700>>, args = ()
 
     def inner(self, *args):
         if self._wrapped is empty:
@@ -462,4 +164,4 @@ self = <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x
 E       TypeError: 'AnonymousUser' object is not iterable
 
 venv\lib\site-packages\django\utils\functional.py:247: TypeError
-================================================================================ 4 failed, 21 passed, 69 warnings in 3.40s ================================================================================= 
+====================================================================================== 1 failed, 24 passed, 73 warnings in 3.18s ======================================================================================= 
